@@ -1,0 +1,8 @@
+app-animals{
+    display: block;
+    height: 15vh;
+    overflow-y: auto;
+    overflow-x:hidden;
+    background-color: chartreuse;
+    padding: 10px;
+}

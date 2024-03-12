@@ -1,0 +1,12 @@
+<!-- {{gazdak|json}} -->
+<div *ngFor="let gazda of gazdak" class="row">
+    <div class="display-4 col-4">
+        {{gazda.nev}}
+    </div>
+    <div class="col-1 mt-4">
+        <button (click)="gazda.nyitva = ! gazda.nyitva" type="button" class="btn btn-primary">Részletek</button>
+    </div>
+    <div *ngIf="gazda.nyitva">
+        <app-animals [animal]="gazda.animal"></app-animals>
+    </div>
+</div>

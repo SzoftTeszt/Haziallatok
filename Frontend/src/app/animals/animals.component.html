@@ -1,0 +1,13 @@
+<!-- {{animal|json}} -->
+
+<div class="row fw-bold">
+    <div *ngFor="let oszlop of oszlopok" class="col">
+        {{oszlop.text}}
+    </div>
+</div>
+
+<div *ngFor="let allat of animal" class="row">
+    <div *ngFor="let oszlop of oszlopok" class="col">
+        {{allat[oszlop.key]}}
+    </div>
+</div>
